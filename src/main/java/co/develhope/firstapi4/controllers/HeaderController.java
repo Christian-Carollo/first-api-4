@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/headers")
 public class HeaderController {
 
-    @GetMapping
+    @GetMapping("/get")
     public String getHeaders(@RequestHeader("host") String host) {
         return "Host: " + host;
     }
